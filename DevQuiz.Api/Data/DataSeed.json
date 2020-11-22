@@ -1,0 +1,43 @@
+[
+  {
+    "questions": [
+      {
+        "questionText": "Jaka jest ró¿nica miêdzy parametrami ref i out",
+        "answers": [
+          {
+            "answerText": "out musi byæ zainicjalizowane przed",
+            "isCorrectAnswer": false
+          },
+          {
+            "answerText": "ref musi byæ zainicjalizowane przed",
+            "isCorrectAnswer": true
+          }
+        ]
+      },
+      {
+        "questionText": "Jaka jest ró¿nica miêdzy modyfikatorami readonly i const",
+        "answers": [
+          {
+            "answerText": "const mo¿e byæ zaicjalizowanie w konstruktorze a readonly nie",
+            "isCorrectAnswer": false
+          },
+          {
+            "answerText": "readonly mo¿e byæ zaicjalizowanie w konstruktorze a const nie",
+            "isCorrectAnswer": true
+          },
+          {
+            "answerText": "oba mog¹ byæ zainicjalizowane w konstruktorze",
+            "isCorrectAnswer": false
+          },
+          {
+            "answerText": "nie ma miêdzy nimi ró¿nicy",
+            "isCorrectAnswer": false
+          }
+        ]
+      }
+    ],
+    "name": "Test 3",
+    "quizTopic": 3,
+    "quizLevel": 1
+  }
+]
