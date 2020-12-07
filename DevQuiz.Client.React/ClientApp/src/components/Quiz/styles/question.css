@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.question-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 50px;
+    width: 30%;
+    margin: 0 auto;
+    border: 1px white solid;
+}

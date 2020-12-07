@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuiz.Api", "DevQuiz.Api\DevQuiz.Api.csproj", "{AEF080A9-7766-414F-B0F0-4BE08F680A2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevQuiz.Api", "DevQuiz.Api\DevQuiz.Api.csproj", "{AEF080A9-7766-414F-B0F0-4BE08F680A2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuiz.Client", "DevQuiz.Client\DevQuiz.Client.csproj", "{631B2E36-59D3-46FD-BB59-61F7DA153815}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevQuiz.Client.Angular", "DevQuiz.Client\DevQuiz.Client.Angular.csproj", "{631B2E36-59D3-46FD-BB59-61F7DA153815}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuiz.Api.UnitTests", "DevQuiz.Api.UnitTests\DevQuiz.Api.UnitTests.csproj", "{AE945B4D-BD88-4A44-989E-C64EF26280F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DevQuiz.Api.UnitTests", "DevQuiz.Api.UnitTests\DevQuiz.Api.UnitTests.csproj", "{AE945B4D-BD88-4A44-989E-C64EF26280F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevQuiz.Client.React", "DevQuiz.Client.React\DevQuiz.Client.React.csproj", "{2A592624-E08D-455B-B236-024BF255BE17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{AE945B4D-BD88-4A44-989E-C64EF26280F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE945B4D-BD88-4A44-989E-C64EF26280F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE945B4D-BD88-4A44-989E-C64EF26280F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A592624-E08D-455B-B236-024BF255BE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A592624-E08D-455B-B236-024BF255BE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A592624-E08D-455B-B236-024BF255BE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A592624-E08D-455B-B236-024BF255BE17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

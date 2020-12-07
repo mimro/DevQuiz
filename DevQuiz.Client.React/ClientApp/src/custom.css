@@ -1,0 +1,21 @@
+/* Provide sufficient contrast against white background */
+
+/*body {
+    height: 1000px;
+    width: 100%;
+    background-color: #121212;
+  color:white;
+}*/
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}

@@ -32,35 +32,35 @@ namespace DevQuiz.Api.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            var quizId = Guid.Parse("{CFB88E29-4744-48C0-94FA-B25B92DEA314}");
-            var questionId = Guid.Parse("{CFB88E29-4744-48C0-94FA-B25B92DEA315}");
-            var Quiz1 = new Quiz
-            {
-                Id = quizId,
-                Name = "Test 1",
-                QuizLevel = QuizLevel.Easy,
-                QuizTopic = QuizTopic.CSharp,
+            //var quizId = Guid.Parse("{CFB88E29-4744-48C0-94FA-B25B92DEA314}");
+            //var questionId = Guid.Parse("{CFB88E29-4744-48C0-94FA-B25B92DEA315}");
+            //var Quiz1 = new Quiz
+            //{
+            //    Id = quizId,
+            //    Name = "Test 1",
+            //    QuizLevel = QuizLevel.Easy,
+            //    QuizTopic = QuizTopic.CSharp,
 
-            };
-            var Question1 = new Question
-            {
-                Id = questionId,
-                QuestionText = "TestQuestion",
-                QuizId = quizId
-            };
+            //};
+            //var Question1 = new Question
+            //{
+            //    Id = questionId,
+            //    QuestionText = "TestQuestion",
+            //    QuizId = quizId
+            //};
 
-            var Answer1 = new Answer { 
-            AnswerText= "TestAnswer",
-            Id = Guid.Parse("{CFB88E29-4744-48C0-94FA-B25B92DEA123}"),
-            IsCorrectAnswer = true,
-            QuestionId = questionId
-            };
+            //var Answer1 = new Answer { 
+            //AnswerText= "TestAnswer",
+            //Id = Guid.Parse("{CFB88E29-4744-48C0-94FA-B25B92DEA123}"),
+            //IsCorrectAnswer = true,
+            //QuestionId = questionId
+            //};
 
-            modelBuilder.Entity<Quiz>().HasData(Quiz1);
+            //modelBuilder.Entity<Quiz>().HasData(Quiz1);
 
-            modelBuilder.Entity<Question>().HasData(Question1);
+            //modelBuilder.Entity<Question>().HasData(Question1);
 
-            modelBuilder.Entity<Answer>().HasData(Answer1);
+            //modelBuilder.Entity<Answer>().HasData(Answer1);
         }
     }
 }

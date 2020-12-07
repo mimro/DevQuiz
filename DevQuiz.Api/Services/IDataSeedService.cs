@@ -12,13 +12,6 @@ namespace DevQuiz.Api.Services
     {
         public IEnumerable<Quiz> Quizzes { get; set; }
 
-        public async Task Seed(string jsonPath)
-        {
-            var jsonData = await System.IO.File.ReadAllTextAsync(jsonPath);
-
-            var quizzes = JsonConvert.DeserializeObject<IEnumerable<Quiz>>(jsonData);
-
-
-        }
+        public Task Seed(string jsonPath);
     }
 }

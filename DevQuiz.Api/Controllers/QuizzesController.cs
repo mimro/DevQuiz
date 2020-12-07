@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 using AutoMapper;
 using DevQuiz.Api.Entities;
 using DevQuiz.Api.Enums;
+using DevQuiz.Api.Extensions;
 using DevQuiz.Api.Models;
 using DevQuiz.Api.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 
 namespace DevQuiz.Api.Controllers
 {
@@ -29,16 +31,35 @@ namespace DevQuiz.Api.Controllers
         public async Task<ActionResult<IEnumerable<QuizDto>>> Get(int? topicId)
         {
             IEnumerable < Quiz > result;
-            if (topicId == null)
+            try
             {
-                 result = await this.quizRepository.GetAllQuizesAsync();
+                if (topicId == null)
+                {
+                    result = await this.quizRepository.GetAllQuizesAsync();
+                }
+                else
+                {
+                    result = await this.quizRepository.GetQuizesByTopicAsync((QuizTopic)topicId);
+                }
+                if (result != null)
+                {
+                    var dto = mapper.Map<List<QuizDto>>(result);
+                    return Ok(dto);
+                }
+                else return StatusCode(404);
             }
-            else
+            catch (Exception)
             {
-                 result =   await this.quizRepository.GetQuizesByTopicAsync((QuizTopic)topicId);
-               
+                return StatusCode(500);
             }
-            var dto = mapper.Map<List<QuizDto>>(result);
+        }
+
+        [HttpGet("{quizId}")]
+        public async Task<ActionResult<QuizDto>> Get(string quizId)
+        {
+            Quiz quiz = await this.quizRepository.GetQuizById(quizId.DecodetFromBase64String());
+            var dto = mapper.Map<QuizDto>(quiz);
+
             return Ok(dto);
         }
 

@@ -18,10 +18,10 @@ namespace DevQuiz.Api.UnitTests.Controllers
         [Test]
         public void IsListOfAllQuizesReturnedWhenNoParam()
         {
-           // var repositoryMock = new Mock(IRe).;
+            //var repositoryMock = new Mock<>().;
 
-          //  var contr = new QuizController();
-            Assert.Pass();
+          // var contr = new QuizController();
+           // Assert.Pass();
         }
     }
 }
